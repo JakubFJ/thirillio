@@ -1,0 +1,94 @@
+package com.semanticsquare.basics;
+
+public class Student {
+    static int studentCount;
+    private static int idInizializer = 1000;
+    private final int id;
+    private String name;
+    private int iGender;
+    private String gender;
+    private int age;
+    private long phone;
+    private double gpa;
+    private char degree;
+
+    private boolean international;
+    private double tuitionFees = 12000.0, internationalFees = 5000.0;
+
+    public String getName(){
+	return name;
+    }
+
+    public void setName(String name){
+
+    }
+
+    public String getGender(){
+	return gender;
+    }
+
+    public void setGender(String gender){
+	if(gender.equals("male")) {
+	iGender = 1; 
+	} else if (gender.equals("female")) {
+	iGender = 2; 
+	} else if (gender.equals("transgender")){
+	iGender = 3; 
+	} if (iGender == 0) {
+	throw new IllegalArgumentException("Invalid gender!!");
+
+	}else {
+	  this.gender = gender;
+	}
+	
+    }
+    
+    Student(String name, String gender, int age, long phone, double gpa, char degree){
+	this(name, gender, age, phone, gpa, degree, false);
+
+	}
+
+    Student(String name, String gender, int age, long phone, 	double gpa, char degree, 			boolean international){
+	this.name = name;
+	this.gender = gender;
+	this.age = age;
+	this.phone = phone;
+	this.gpa = gpa;
+	this.degree = degree;
+	this.international = international;	
+
+	id = ++idInizializer;
+	studentCount = studentCount + 1;
+ 	System.out.println("ID of " + name + "is " + id );
+	
+	if (international == true) {
+	    tuitionFees = tuitionFees + internationalFees;	
+	    /* return;  pokud tedy dáme return do této metody, tak se další blok kodu, což je tisk nespustí, jeli student mezinárodní..Jakub není, takže pro něj System.out.println bude fungovat */
+	}
+	if (gpa > 3.5) {
+	    tuitionFees = tuitionFees - 1000;	
+	}
+
+/*	System.out.println("\nid: " + this.id);
+	System.out.println("nextId: " + nextId);
+	System.out.println("name: " + this.name);
+	System.out.println("gender: " + this.gender);
+	System.out.println("Age: " + this.age);
+	System.out.println("Phone: " + this.phone);
+	System.out.println("Gpa: " + this.gpa);
+	System.out.println("Degre: " + this.degree);
+	System.out.println("tuitionFees: " + tuitionFees);
+	System.out.println("studentCount: " + studentCount); */
+	
+	}
+
+    boolean updateProfile(String name) {
+    this.name = name;
+    return true;
+    }
+
+	boolean equals(Student s){
+	return id == s.id;
+	}
+	
+}

@@ -1,0 +1,6 @@
+package com.semanticsquare.oop.abstractdemo;
+
+public abstract class AbstractSuperclass {
+	public abstract int foo();
+	public abstract int bar();
+}

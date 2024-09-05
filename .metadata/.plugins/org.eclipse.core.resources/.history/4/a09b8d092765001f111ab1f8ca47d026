@@ -1,0 +1,16 @@
+package com.semanticsquare.oop.abstractdemo;
+
+public class ConcreteSubclass extends AbstractSubclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int bar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

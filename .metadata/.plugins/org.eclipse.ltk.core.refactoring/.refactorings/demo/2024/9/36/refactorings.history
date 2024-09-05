@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.semanticsquare.basics.StudentTest&apos; to &apos;StudentTestDrive&apos;&#x0A;- Original project: &apos;demo&apos;&#x0A;- Original element: &apos;com.semanticsquare.basics.StudentTest&apos;&#x0A;- Renamed element: &apos;com.semanticsquare.basics.StudentTestDrive&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StudentTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.semanticsquare.basics{StudentTest.java[StudentTest" matchStrategy="1" name="StudentTestDrive" qualified="false" references="true" similarDeclarations="false" stamp="1725286415993" textual="false" version="1.0"/>
+</session>

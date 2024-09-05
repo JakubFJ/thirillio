@@ -1,0 +1,7 @@
+package com.semanticsquare.oop.interfacedemo;
+
+public abstract class AbstractA implements A, C {
+   public void bar() {
+	   System.out.println("AbstractA: bar");
+   }
+}

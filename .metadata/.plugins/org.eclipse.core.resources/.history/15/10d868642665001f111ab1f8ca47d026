@@ -1,0 +1,10 @@
+package com.semanticsquare.oop.abstractdemo;
+
+public class ConcreteSubclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

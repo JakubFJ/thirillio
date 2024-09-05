@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.semanticsquare.basics","l":"BasicsDemo"},{"p":"com.semanticsquare.basicstest","l":"BasicsDemoTest"},{"p":"com.semanticsquare.basics","l":"Student"}];updateSearchResults();

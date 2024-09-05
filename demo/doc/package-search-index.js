@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.semanticsquare.basics"},{"l":"com.semanticsquare.basicstest"}];updateSearchResults();

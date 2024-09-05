@@ -1,0 +1,14 @@
+package com.semanticsquare.oop.p1;
+
+public class A1 {
+  static private int privateMember = 1;
+  static int defaultMember = 2;
+  static protected int protectedMember = 3;
+  static public int publicMember = 4;
+public static int getPrivateMember() {
+	return privateMember;
+}
+public static void setPrivateMember(int privateMember) {
+	A1.privateMember = privateMember;
+}  
+}
